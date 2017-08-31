@@ -19,7 +19,7 @@
 
 local _G = getfenv(0)
 
-CarboniteWeekly = LibStub("AceAddon-3.0"):NewAddon("CarboniteWeekly","AceEvent-3.0","AceComm-3.0")
+CarboniteWeekly = LibStub("AceAddon-3.0"):NewAddon("CarboniteWeekly", "AceEvent-3.0", "AceComm-3.0")
 
 local L = LibStub("AceLocale-3.0"):GetLocale("Carbonite.Weekly", true)
 
