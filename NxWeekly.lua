@@ -1549,13 +1549,13 @@ function Nx.Weekly:OnButToggleWeekly (but)
 end
 
 function Nx.Weekly:CalcEpoch()
-	local date = C_Calendar.GetDate()
+	local date = C_DateAndTime.GetCurrentCalendarTime()
 	return time({year = date.year, month = date.month, day = date.monthDay, hour = date.hour, min = date.minute})
 end
 
 function Nx.Weekly:CalcReset()
 	local seconds = GetQuestResetTime()
-	local date = C_Calendar.GetDate()
+	local date = C_DateAndTime.GetCurrentCalendarTime()
     local day = date.weekday;
 	local dailydate = Nx.wkdb.profile.Weekly.ResetDate
 	if day - 2 == dailydate-1 then
