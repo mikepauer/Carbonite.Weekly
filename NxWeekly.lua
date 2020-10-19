@@ -699,7 +699,7 @@ function Nx.Weekly:CharRecord(ch)
 	ch.Weekly.TemperedFateSeals = 0
 	local qids = {36058,36054,37454,37455,36056,37456,37457,36057,37458,37459,36055,37452,37453}
 	for a,b in pairs(qids) do
-		if IsQuestFlaggedCompleted(b) then
+		if C_QuestLog.IsQuestFlaggedCompleted(b) then
 			ch.Weekly.TemperedFateSeals = ch.Weekly.TemperedFateSeals + 1
 		end
 	end
@@ -716,7 +716,7 @@ function Nx.Weekly:CharRecord(ch)
 		["Sha"] = 32099,
 	}
 	for a,b in pairs(qids) do
-		ch.Weekly[a] = IsQuestFlaggedCompleted(b)
+		ch.Weekly[a] = C_QuestLog.IsQuestFlaggedCompleted(b)
 	end
 	qids = {
 		[L["Bronze"]] = 37638,
@@ -724,7 +724,7 @@ function Nx.Weekly:CharRecord(ch)
 		[L["Gold"]] = 37640,
 	}
 	for a,b in pairs(qids) do
-		if IsQuestFlaggedCompleted(b) then
+		if C_QuestLog.IsQuestFlaggedCompleted(b) then
 			ch.Weekly.GarrisonInvasion = a
 		end
 	end
