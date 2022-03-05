@@ -9,6 +9,7 @@
 ## RequiredDeps: Carbonite
 
 ## X-WoWI-ID: 23409
+## X-Curse-Project-ID: 87982
 
 Locales\locales.xml
 NxWeekly.lua
